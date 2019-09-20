@@ -33,8 +33,8 @@
   </section>
 </template>
 
-<script>
-import Card from '~/components/Card'
+<script lang="ts">
+import Card from '~/components/Card.vue'
 
 export default {
   name: 'HomePage',
