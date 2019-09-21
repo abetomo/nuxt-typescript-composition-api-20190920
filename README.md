@@ -1,4 +1,4 @@
-# nuxt-typescript-function-api-20190920
+# nuxt-typescript-composition-api-20190920
 
 ## install
 
