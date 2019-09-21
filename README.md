@@ -27,9 +27,9 @@
     ** Nuxt.js modules
 ```
 
-create `tsconfig.json`
+Create `tsconfig.json`.
 
-```
+```json
 {
   "compilerOptions": {
     "target": "esnext",
@@ -145,6 +145,35 @@ create `tsconfig.json`
 
  export default {
    name: 'HomePage',
+```
+
+## composition-api
+
+```
+% npm i @vue/composition-api
+```
+
+Create `./plugins/composition-api.js`.
+
+```js
+import Vue from 'vue'
+import VueCompositionApi from '@vue/composition-api'
+
+Vue.use(VueCompositionApi)
+```
+
+```diff
+--- a/nuxt.config.js
++++ b/nuxt.config.js
+@@ -27,7 +27,7 @@ export default {
+   /*
+    ** Plugins to load before mounting the App
+    */
+-  plugins: [],
++  plugins: ['@/plugins/composition-api'],
+   /*
+    ** Nuxt.js dev-modules
+    */
 ```
 
 ## links
