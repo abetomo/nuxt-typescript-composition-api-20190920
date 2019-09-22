@@ -176,6 +176,28 @@ Vue.use(VueCompositionApi)
     */
 ```
 
+```diff
+--- a/components/Card.vue
++++ b/components/Card.vue
+@@ -23,7 +23,9 @@
+ </template>
+
+ <script lang="ts">
+-export default {
++import { createComponent } from '@vue/composition-api'
++
++export default createComponent({
+   props: {
+     title: {
+       type: String,
+@@ -34,5 +36,5 @@ export default {
+       required: true
+     }
+   }
+-}
++})
+```
+
 ## links
 
 * https://nuxtjs.org/guide/installation/
