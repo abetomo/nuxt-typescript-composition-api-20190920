@@ -198,6 +198,28 @@ Vue.use(VueCompositionApi)
 +})
 ```
 
+```diff
+--- a/pages/index.vue
++++ b/pages/index.vue
+@@ -34,13 +34,14 @@
+ </template>
+
+ <script lang="ts">
++import { createComponent } from '@vue/composition-api'
+ import Card from '~/components/Card.vue'
+
+-export default {
++export default createComponent({
+   name: 'HomePage',
+
+   components: {
+     Card
+   }
+-}
++})
+ </script>
+ ```
+
 ## links
 
 * https://nuxtjs.org/guide/installation/

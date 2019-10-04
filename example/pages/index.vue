@@ -34,13 +34,14 @@
 </template>
 
 <script lang="ts">
+import { createComponent } from '@vue/composition-api'
 import Card from '~/components/Card.vue'
 
-export default {
+export default createComponent({
   name: 'HomePage',
 
   components: {
     Card
   }
-}
+})
 </script>
