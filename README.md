@@ -68,13 +68,16 @@ Create `tsconfig.json`.
 ## lint
 
 ```
-% npm i -D @nuxtjs/eslint-config-typescript
+% npm i -D @nuxtjs/eslint-config-typescript @typescript-eslint/parser
 ```
 
 ```diff
 --- a/.eslintrc.js
 +++ b/.eslintrc.js
 @@ -9,6 +9,7 @@ module.exports = {
+   parserOptions: {
+-    parser: 'babel-eslint'
++    parser: '@typescript-eslint/parser'
    },
    extends: [
      '@nuxtjs',
