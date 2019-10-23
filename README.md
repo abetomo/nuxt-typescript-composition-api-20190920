@@ -221,7 +221,62 @@ Vue.use(VueCompositionApi)
 -}
 +})
  </script>
- ```
+```
+
+```diff
+--- a/layouts/default.vue
++++ b/layouts/default.vue
+@@ -39,23 +39,37 @@
+-<script>
+-export default {
+-  data() {
++<script lang="ts">
++import { createComponent } from '@vue/composition-api'
++
++type To = {
++  name: string
++}
++
++type Item = {
++  title: string
++  icon: string
++  to: To
++}
++
++export default createComponent({
++  setup() {
++    const items: Item[] = [
++      {
++        title: 'Home',
++        icon: 'home',
++        to: { name: 'index' }
++      },
++      {
++        title: 'Inspire',
++        icon: 'lightbulb',
++        to: { name: 'inspire' }
++      }
++    ]
++
+     return {
+-      items: [
+-        {
+-          title: 'Home',
+-          icon: 'home',
+-          to: { name: 'index' }
+-        },
+-        {
+-          title: 'Inspire',
+-          icon: 'lightbulb',
+-          to: { name: 'inspire' }
+-        }
+-      ]
++      items
+     }
+   }
+-}
++})
+```
 
 ## links
 
