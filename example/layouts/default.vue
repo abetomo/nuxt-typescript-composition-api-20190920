@@ -40,7 +40,7 @@
 </template>
 
 <script lang="ts">
-import { createComponent } from '@vue/composition-api'
+import { defineComponent } from '@vue/composition-api'
 
 type To = {
   name: string
@@ -52,7 +52,7 @@ type Item = {
   to: To
 }
 
-export default createComponent({
+export default defineComponent({
   setup() {
     const items: Item[] = [
       {

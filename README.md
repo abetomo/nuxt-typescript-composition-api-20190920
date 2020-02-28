@@ -282,3 +282,17 @@ Vue.use(VueCompositionApi)
 
 * https://nuxtjs.org/guide/installation/
 * https://typescript.nuxtjs.org/guide/
+
+## 2020-02-28
+
+```
+[Vue warn]: `createComponent` has been renamed to `defineComponent`.
+```
+
+```diff
+-import { createComponent } from '@vue/composition-api'
++import { defineComponent } from '@vue/composition-api'
+
+-export default createComponent({
++export default defineComponent({
+```
