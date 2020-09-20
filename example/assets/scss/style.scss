@@ -2,12 +2,14 @@
 @import "~bulma/sass/utilities/_all";
 
 // Set your colors
-$primary: #ff4f02;
+$primary: #0a2855;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
 
 // Setup $colors to use as bulma classes
 $colors: (
-  "primary": ($primary, $primary-invert)
+  "primary": ($primary, $primary-invert, $primary-light, $primary-dark)
 );
 
 // Links
