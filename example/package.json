@@ -15,7 +15,7 @@
   "dependencies": {
     "@vue/composition-api": "^0.4.0",
     "nuxt": "^2.14.1",
-    "nuxt-buefy": "^0.3.31"
+    "nuxt-buefy": "^0.4.3"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.8",
