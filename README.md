@@ -296,3 +296,21 @@ Vue.use(VueCompositionApi)
 -export default createComponent({
 +export default defineComponent({
 ```
+
+## 2020-10-01
+
+```
+ WARN  mode option is deprecated. Please use ssr: true for universal mode or ssr: false for spa mode and remove mode from nuxt.config
+```
+
+```diff
+--- a/nuxt.config.js
++++ b/nuxt.config.js
+@@ -1,5 +1,5 @@
+ export default {
+-  mode: 'spa',
++  ssr: false,
+   /*
+    ** Headers of the page
+    */
+```
